@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HACKED BY TEAM TRS x TEAM UCS x TEAM TCF</title>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Iceland&display=swap" rel="stylesheet">
+<style>
+html,body{width:100%;height:100%;margin:0;background:#000;font-family:'Share Tech Mono',monospace;overflow:hidden}
+.video-bg{position:fixed;inset:0;z-index:0}.video-bg video{width:100%;height:100%;object-fit:cover;filter:brightness(.45) blur(2px);transform:scale(1.04)}
+.video-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:1}
+.center{position:relative;z-index:3;width:100%;height:100svh;display:flex;justify-content:center;align-items:center}
+.image-box{position:relative;width:60vw;max-width:650px;aspect-ratio:16/9;border:3px solid #ef4444;border-radius:8px;overflow:hidden;animation:glow 4s infinite ease-in-out}
+.image-box::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.25);z-index:2}
+@keyframes glow{0%{box-shadow:0 0 15px rgba(239,68,68,.4)}50%{box-shadow:0 0 55px rgba(239,68,68,.9)}100%{box-shadow:0 0 15px rgba(239,68,68,.4)}}
+.image-box img{width:100%;height:100%;object-fit:cover;opacity:.75;filter:contrast(1.15) brightness(1.1)}
+.marquee{position:fixed;bottom:0;z-index:4;width:100%;background:#000;border-top:1px solid #eab308;overflow:hidden;white-space:nowrap}
+.marquee span{display:inline-block;padding:8px 0;animation:scroll 15s linear infinite;color:#eab308;font-family:'Iceland',cursive;letter-spacing:3px}
+@keyframes scroll{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+</style>
+</head>
+<body>
+<div class="video-bg"><video id="bgVideo" autoplay muted loop playsinline preload="metadata"><source src="https://pub-7ccadcc3c14145d9b10aa404273d4530.r2.dev/bg.mp4" type="video/mp4"></video></div>
+<div class="video-overlay"></div>
+<div class="center"><div class="image-box"><img src="https://i.postimg.cc/QtgL5WcY/20251225-005248-pxbee-minitools-enhance-2025122505523.jpg"></div></div>
+<div class="marquee"><span>THIS SITE TOUCHED BY TEAM TRS x TEAM UCS x TEAM TCF</span></div>
+<script>
+const video=document.getElementById("bgVideo");video.play().catch(()=>{});
+const enableSound=()=>{video.muted=false;video.volume=1;video.play();document.removeEventListener("click",enableSound);document.removeEventListener("touchstart",enableSound)};
+document.addEventListener("click",enableSound);document.addEventListener("touchstart",enableSound);
+</script>
+</body>
+</html>
